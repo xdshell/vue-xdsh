@@ -9,10 +9,10 @@ export default {
     }
   },
   mounted() {
-    let terminal = Terminal.newTerminal(this.img)
-    let xdsh = <HTMLDivElement>this.$refs.xdsh
+    let { terminal, xdsh } = Terminal.newTerminal(this.img)
+    let xdsh_div = <HTMLDivElement>this.$refs.xdsh
 
-    xdsh.appendChild(terminal)
+    xdsh_div.appendChild(terminal)
   }
 }
 </script>
